@@ -3,10 +3,15 @@
 backups/
 cache/
 file-history/
+ide/
 plans/
 plugins/
 projects/
 sessions/
-settings.json
+shell-snapshots/
 state/
 telemetry/
+.claude.json
+settings.json
+
+
