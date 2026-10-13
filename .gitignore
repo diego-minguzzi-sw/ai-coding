@@ -1,0 +1,12 @@
+.credentials.json
+.last-cleanup
+backups/
+cache/
+file-history/
+plans/
+plugins/
+projects/
+sessions/
+settings.json
+state/
+telemetry/
