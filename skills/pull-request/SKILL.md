@@ -9,5 +9,10 @@ Rather than going into implementation details, include in the PR the modificatio
 
 - interface changes
 - behavioral change
+- new commands added to command line tools
+
+Use the past tense in describing the modifications, e.g. added the methods, extended the interface, etc.
+
+If you add a bullet list, the first character of every item must be lowercase.
 
 Do not add messages like "authored by Copilot" or any other model or harness.
