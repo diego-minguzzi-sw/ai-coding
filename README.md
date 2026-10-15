@@ -1,5 +1,8 @@
 # AI Coding
 
+Configuration files, agents, skills and rules for Agentic coding harnesses: Claude and gitHub Copilot.
+
+
 ## Installation
 
 To change the location where Claude Code stores its configuration (skills, plugins, settings, etc.), set the `CLAUDE_CONFIG_DIR` environment variable to the directory of your choice. For example:
