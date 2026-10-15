@@ -9,3 +9,5 @@ Rather than going into implementation details, include in the PR the modificatio
 
 - interface changes
 - behavioral change
+
+Do not add messages like "authored by Copilot" or any other model or harness.
