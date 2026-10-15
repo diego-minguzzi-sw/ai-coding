@@ -4,9 +4,11 @@ backups/
 cache/
 file-history/
 ide/
+logs/
 plans/
 plugins/
 projects/
+session-state/
 sessions/
 shell-snapshots/
 state/
