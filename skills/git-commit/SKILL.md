@@ -34,6 +34,7 @@ and capture the output.
 Given the output of the previous step, summarize the modifications occurred in the code, into a brief one line text.
 In particular, if applicable, insert the name of the main classes or files that were modified or created.
 Let's call <summary> the brief one line text summary.
+Do not add messages like "authored by Copilot" or any other model or harness.
 
 ## Issue a warning message if there are untracked files
 Warn me if there are untracked files, that can be detected with the command:
