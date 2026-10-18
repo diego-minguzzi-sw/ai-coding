@@ -60,4 +60,3 @@ Restart your terminal and Claude Code so the new location is picked up.
 
 ## TODO
 
-* Unify Claude rules and Copilot 
