@@ -1,4 +1,6 @@
 ---
+name: 'C++ implementation files coding guidelines'
+applyTo: "**/*.cpp"
 paths:
   - "**/*.cpp"
 ---

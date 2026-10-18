@@ -1,4 +1,6 @@
 ---
+name: 'Python coding guidelines'
+applyTo: "**/*.py"  
 paths:
   - "**/*.py"  
 ---

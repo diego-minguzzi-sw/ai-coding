@@ -37,6 +37,8 @@ On Windows (Cmd/batch file):
 COPILOT_HOME=C:\repo\ai-coding
 ```
 
+**Hint**: if you launch Visual Studio Code from WSL, but Visual Studio Code actually runs in Windows and accesses Linux files via the Remote - SSH extension, then add the environment variable in Windows.  You can verify the path of the skills and instructions that Visual Studio Code is using.
+
 ### Copy your existing configuration
 
 Changing the variable does not move anything automatically, so Claude Code will start with an empty configuration. Copy the existing files from your current `.claude` directory (by default `~/.claude`) into the new config directory:
@@ -58,4 +60,3 @@ Restart your terminal and Claude Code so the new location is picked up.
 
 ## TODO
 
-* Unify Claude rules and Copilot 

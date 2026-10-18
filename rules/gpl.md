@@ -1,4 +1,8 @@
 ---
+name: 'GPL files'
+applyTo: 
+  - "**/*.gpl"  
+  - "**/*.GPL"  
 paths:
   - "**/*.gpl"
   - "**/*.GPL"

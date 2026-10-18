@@ -1,4 +1,8 @@
 ---
+name: 'C++ header files coding guidelines'
+applyTo: 
+  - "**/*.h"  
+  - "**/*.hpp"  
 paths:
   - "**/*.h"
   - "**/*.hpp"  
