@@ -1,10 +1,10 @@
 ---
 name: git-pull-request
-description: git - create the markdown text to submit a pull request related to a git branch.
+description: Use it to create the text describing a git pull request
 ---
 
 Analyze the modifications that I executed in the current beanch, and create the text of the pull request, in markdown format.
-Do not be verbose, prefer bullet lists. 
+Do not be verbose, prefer bullet lists.
 Rather than going into implementation details, include in the PR the modifications that affect users of the library or applications:
 
 - interface changes

@@ -9,7 +9,7 @@ paths:
 
 - Use the Rust 2024 edition idioms.
 
-- At the beginning of every Rust source file, after the banner (if it exists), among the ```rust use ``` declarations, add:
+- At the beginning of every Rust source file, after the banner (if it exists), among the ```rust use ``` declarations, add, sorted alphabetically:
 ```rust
 use namefn::namefn;
 ```

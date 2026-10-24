@@ -1,8 +1,10 @@
 ---
 name: git-commit
-description: Create the message related to a git commit
+description: Use it to create the message of a git commit.
 ---
-<use-session> : if it is "true" case unsensitive, then the skill will use the current session context to generate the git commit message. 
+Parameters:
+  - <use-session> : if it is "true" case unsensitive, then the skill will use the current session context to generate the git commit message.
+
 Otherwise, the skill uses only the uncommited modifications on the repository.
 
 **Do not edit or modify any file.**
@@ -11,7 +13,7 @@ The steps are:
 
 * if <use-session> is true, use the session title as main source to create the commit message
 * list the modified files
-* list the uncommitted modifications on the repository 
+* list the uncommitted modifications on the repository
 * summarize the modifications in a single brief line
 * issue a warning message if there are untracked files
 * execute the git commit using that single brief line as message
