@@ -1,9 +1,13 @@
 ---
-name: rs-create-source
-description: Create a new Rust source file
+name: rs-create-file
+description: Use it to create a new Rust source file
 ---
 Instructions to create a Rust source file in the path <source-path> with name <filename>
 This skill is intended to be used in  Rust projects only.
+
+Required parameters:
+  - <source-path> : the path relative to the src directory where the new Rust source file will be created.
+  - <filename> : the name of the Rust source file to create, without the .rs extension.
 
 # Steps to create a new Rust file
 
@@ -22,16 +26,9 @@ If the user denies, stop immediately.
 
 ### Username
 The username of the current user is required to populate the file header.
-Find the current user name let's say the username is [username].
-To find it in Windows:
-```bat
-echo %USERNAME%
-```
+Use the skill /utils-get-username to retrieve the username.
+Assign the username to the variable [username] .
 
-In Linux
-```bash
-whoami
-```
 
 ## Create the file header
 Before creating the Rust source file, read assets/source_header.rs relative to this SKILL.md.

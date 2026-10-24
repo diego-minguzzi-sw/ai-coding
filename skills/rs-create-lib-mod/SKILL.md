@@ -1,10 +1,14 @@
 ---
 name: rs-create-lib-mod
-description: Rust: create a new module in the project library.
+description: Use with Rust, to create a new module in the project library.
 ---
+This skill is intended to be used in  Rust projects only.
+
+Required parameters:
+  - [mod-name] : the name of the module to create.
 
 # Locate the Rust project
-This skill is intended to be used in  Rust projects only.
+
 The module is created in a Rust project.
 If it not clear, ask the user which is the Rust project root directory and use it to locate the src directory; the one containing the files Cargo.toml and Cargo.lock.
 
