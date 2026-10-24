@@ -3,23 +3,50 @@ name: rs-create-source
 description: Create a new Rust source file
 ---
 Instructions to create a Rust source file in the path <source-path> with name <filename>
+This skill is intended to be used in  Rust projects only.
 
+# Steps to create a new Rust file
+
+# Locate the Rust project
+This skill is intended to be used in  Rust projects only.
+The module is created in a Rust project.
+If it not clear, ask the user which is the Rust project root directory and use it to locate the src directory; the one containing the files Cargo.toml and Cargo.lock.
+
+## Ask for confirmation to the user
+Before adding the file, ask confirmation to the user, saying:
+"About to create the file src/<source-path>/<filename>.rs . Proceed?"
+
+If the user denies, stop immediately.
+
+## Find environment information
+
+### Username
+The username of the current user is required to populate the file header.
 Find the current user name let's say the username is [username].
-In Windows:
+To find it in Windows:
 ```bat
 echo %USERNAME%
 ```
 
+In Linux
+```bash
+whoami
+```
+
+## Create the file header
+Before creating the Rust source file, read assets/source_header.rs relative to this SKILL.md.
+Read the contents of `assets/source_header.rs` into a variable called `header`.
+In `header` substitute [username] with the username found at the step before.
+
+In the new Rust source file, you will replace `[header]` with the contents of `assets/source_header.rs`.
+
+## Create the Rust source file
 Create a file with filename src/<source-path>/<filename>.rs relative to the current Cargo project.
 
-Before adding the file, ask confirmation to the user, saying:
-"About to create the file src/<source-path>/<filename>.rs . Proceed?"
-
-If the user denies, stop.
-
 The Rust source file must have the following content:
+
 ```rust
-//------------------------------------------------------------------------------------------------
+[header]
 // [username]
 //------------------------------------------------------------------------------------------------
 use namefn::namefn;
@@ -31,4 +58,3 @@ fn my_function() {
 }
 */
 ```
-
