@@ -7,19 +7,19 @@ paths:
 # C++ coding standards for implementation files
 - Use 2 spaces for indentation. Always indent using spaces, no tabs.
 
-- initialize variables with ```c++ auto ```. Use initialization auto the variable and the data type. Examples:
+- initialize variables with ```c++ auto ```. Use initialization with auto the variable and the data type. Examples:
 ```c++
   auto graspErrorCode= ::gw_comm::autom_elements::ErrorCode::OK;
   auto errorMessage = ::std::string{};
 ```
 
-- When comparing a constant and a variable for equality or not equality, place the constant first. this is MANDATORY. 
+- When comparing a constant and a variable for equality or not equality, place the constant first. this is MANDATORY.
   Examples
 ```c++
   if ( ::robot_control::GraspState::GraspingObject!=graspState)
   {
     return false;
-  }  
+  }
 ```
 ```c++ if( nullptr == motor ) { return; }  ```
 
