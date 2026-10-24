@@ -1,6 +1,6 @@
 ---
-name: pull-request
-description: Create the markdown text to submit a pull request related to a github branch.
+name: git-pull-request
+description: git - create the markdown text to submit a pull request related to a git branch.
 ---
 
 Analyze the modifications that I executed in the current beanch, and create the text of the pull request, in markdown format.
