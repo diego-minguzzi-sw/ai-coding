@@ -21,6 +21,11 @@ if the src directory already contains a directory called [mod-name], notify the 
 Otherwise, create a new directory called [mod-name] inside the src directory and add a mod.rs file inside it.
 
 Use the skill /rs-create-source to create the mod.rs file inside the [mod-name] directory.
+Then, remove the line
+```rust
+use namefn::namefn;
+```
+, from mod.rs , since it is not used.
 
 # Update or create the lib.rs file
 

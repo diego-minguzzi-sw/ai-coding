@@ -61,7 +61,7 @@ Use the skill /rs-create-file to create a Rust source file src/[mod]/[rs-file].r
 Add the following lines to src/[mod]/mod.rs, sorting the child modules by name:
 ```rust
 mod [rs-file];
-pub use self::[rs-file]::*;
+pub use self::[rs-file]::*; // Exposes pub entities of [rs-file] as pub in [mod].
 ```
 
 
