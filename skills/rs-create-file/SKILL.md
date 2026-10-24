@@ -44,8 +44,6 @@ The Rust source file must have the following content:
 
 ```rust
 [header]
-// [username]
-//------------------------------------------------------------------------------------------------
 use namefn::namefn;
 
 /*
