@@ -57,6 +57,22 @@ Copy-Item -Recurse -Force $HOME\.claude\* C:\Users\user\claude_config_files\
 
 Restart your terminal and Claude Code so the new location is picked up.
 
+# Tricks and pitfalls
+
+## Visual Studio Code with gitHub Copilot 
+### Use customizations in a monorepo
+By default, VS Code only discovers customization files within your open workspace folder(s). 
+Enable the setting below to also discover customizations from the parent repository. <br>
+```json
+{
+  "chat.useCustomizationsInParentRepositories": true
+}
+```
+( ref <a target="_blank" href="https://code.visualstudio.com/docs/agent-customization/overview#_use-customizations-in-a-monorepo">VS Code documentation</a>)
+<br>
+
+
+
 
 ## TODO
 
