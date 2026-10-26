@@ -39,6 +39,8 @@ paths:
 
 - initialize class data members of built-in types (int, float, uint32_t, etc.) using curly braces
 
+- Specify ```c++ explicit ``` in front of every constructor, except the default, copy or move constructor.
+
 Example of the rules above.
 
 ```c++
@@ -62,6 +64,8 @@ class MyClass
 public:
   MyClass( const MyClass&)= default;
   MyClass( MyClass&&)= default;
+
+  explicit MyClass( int aValue, const ::std::string& objectId);
 
   MyClass& operator=( const MyClass&)= default;
   MyClass& operator=( MyClass&&)= default;
