@@ -23,6 +23,14 @@ paths:
 ```
 ```c++ if( nullptr == motor ) { return; }  ```
 
+- In case the result of a method or function is tested with a switch, prefer the if construct where the scope of the result is kept inside the if body:
+```c++
+  if (auto result= executeAction(); Result::OK!=erpcResult)
+  {
+    [...]
+  }
+```
+
 
 - Class names are written in PascalCase, with first letter uppercase. Example: ```c++ class RobotAutomationElement ```
 

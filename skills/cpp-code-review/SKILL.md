@@ -1,6 +1,6 @@
 ---
 name: cpp-code-review
-description: Use it to execute a code review on C++ code.
+description: Use it to execute code reviews on C++ source code.
 ---
 
 Parameters asked to the user:
@@ -23,7 +23,7 @@ Analyze the implementation against race conditions, deadlocks, currect use synch
 Robust memory allocation and deallocation both in case of correct execution and in case of errors.
 
 # Unhandled conditions 
-Check of the code handles all conditions, or of there are:
+Check if the code handles all conditions, or if there are:
 
 - corner cases 
 - unhandled enumerators 
