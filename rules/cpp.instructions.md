@@ -46,6 +46,7 @@ paths:
 - Before any method or function implementation, insert a horizontal comment line with dashes, 99 characters wide.
 
 - In switch case constructors handling enumerations, there must be no ```c++ default: ``` . Rather, all enumerators must be handled.
+  So, the compiler can raise a warning in case a new enumerator is added but it is not handled in the switch case.
 
 
 Example of the rules above.
