@@ -16,7 +16,8 @@ Suppose that, for example:
 - [namespace] = entities::office
 - [class_name] = CompanyEmployee
 
-Refer to the skill: cpp-create-file to create both the Header and the Implementation file.
+# Scope
+Only create the header and implementation files for the new class, do not modify any other file to complete this skill.
 
 # Create the Header file ( .h extension)
 The name of the file is created starting from the [class_name].
@@ -24,9 +25,12 @@ The name of the file is created starting from the [class_name].
 [file_name] corresponds to [class_name] but it is lowercase snakecase
 
 Create the header file in the path: [src_path]/include/[top_namespace]/[sub_namespace]/.../[file_name].h
+If the file already exist, inform the user and stop.
 
 In the example above, the actual path is:
 /home/user/repo/src/my_library/include/entities/office/company_employee.h
+
+Refer to the skill: cpp-create-file to create the header file, containing the banner with the author.
 
 # Populate the Header file ( .h extension)
 If the [class_name] and [namespace] are those of the example, populate the header file with the content below.
@@ -34,9 +38,6 @@ Note that the header guard macro is created concatenating the namespace and the 
 with trailing _H_
 
 ```c++
-/*************************************************************************************************
- * [Author]
- **************************************************************************************************/
 #ifndef ENTITIES_OFFICE_COMPANY_EMPLOYEE_H_
 #define ENTITIES_OFFICE_COMPANY_EMPLOYEE_H_
 
@@ -71,9 +72,12 @@ private:
 # Create the Implementation file ( .cpp extension)
 The filename of the implemementation file is the same as the header file, but with .cpp extension, but created  in a different path:
 [src_path]/source/[top_namespace]/[sub_namespace]/.../[file_name].cpp
+If the file already exist, inform the user and stop.
 
 Given the example above, the filepath is:
 /home/user/repo/src/my_library/source/entities/office/company_employee.cpp
+
+Refer to the skill: cpp-create-file to create the implementation file, containing the banner with the author.
 
 # Populate the Implementation file ( .cpp extension)
 
