@@ -13,7 +13,11 @@ paths:
   auto errorMessage = ::std::string{};
 ```
 
-- When comparing a constant and a variable for equality or not equality, place the constant first. this is MANDATORY.
+- use braced initialization for variables and objects. Examples:
+  ```c++ auto name = ::std::string{"Jimi"}; ```
+  ```c++ auto x = int{42}; ```
+
+- When comparing a constant and a variable for equality or not equality, write the constant first. This is MANDATORY.
   Examples
 ```c++
   if ( ::robot_control::GraspState::GraspingObject!=graspState)
@@ -23,20 +27,21 @@ paths:
 ```
 ```c++ if( nullptr == motor ) { return; }  ```
 
-- In case the result of a method or function is tested with a switch, prefer the if construct where the scope of the result is kept inside the if body:
+- In case the result of a method or function is tested by an if conditional, initialize the result inside the if statement:
 ```c++
-  if (auto result= executeAction(); Result::OK!=erpcResult)
+  if (auto result= executeAction(); Result::OK!=result)
   {
     [...]
   }
 ```
-
 
 - Class names are written in PascalCase, with first letter uppercase. Example: ```c++ class RobotAutomationElement ```
 
 - Class methods and functions are written in camelCase, with first letter lowercase. Example: ```c++ void toString() const; ```
 
 - Class data members are written in camel case, with leading underscore
+
+- function and method parameters are written in camel case, no leading underscore.
 
 - getter methods have the same name as the data member, without the leading underscore. They are const methods.
 
@@ -61,7 +66,7 @@ Example of the rules above.
 
 ```c++
 /*
- * Copyright (c) 2026 Brooks Laboratory Automation Solutions Pty Ltd
+ * Diego Minguzzi
  */
 #include "my_library/my_classes.h"
 
